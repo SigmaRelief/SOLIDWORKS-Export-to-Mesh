@@ -1,3 +1,7 @@
+#This script was written by SigmaRelief
+#Version 1.0.0 2020-06-22
+#https://github.com/SigmaRelief/SOLIDWORKS-Export-to-Mesh
+
 # importing required modules 
 from zipfile import ZipFile
 import io
