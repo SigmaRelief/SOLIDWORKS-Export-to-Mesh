@@ -4,7 +4,7 @@ This is a simple SOLIDWORKS macro to export files to the .3MF format and updates
 
 Additional functionality from my other SW macros has crept into this and there are provisions to to export all configurations in a single click, change the file name, export location, and ability to save preferences from within the GUI.
 
-![Screenshot](/Doc/Export Options Screenshot.png)
+![Screenshot](https://github.com/SigmaRelief/SOLIDWORKS-Export-to-Mesh/blob/master/Doc/Export%20Options%20Screenshot.png)
 
 # Requirements
 The rename functionality requires Python 3.X to be installed
