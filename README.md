@@ -7,12 +7,13 @@ Additional functionality from my other SOLIDWORKS macros has crept into this and
 ![Screenshot](https://github.com/SigmaRelief/SOLIDWORKS-Export-to-Mesh/blob/master/Doc/Export%20Options%20Screenshot.png)
 
 # Installation
-Place all 4 "Export to Mesh.xxx" files in your preferred macro folder.
+* Place all 4 "Export to Mesh.xxx" files in your preferred macro folder.
+* In SOLIDWORKS, click Tools/Customize/Commands/Macro, Select "New Macro Button", and place it in the GUI.
+* Point the new button to "Export to Mesh.swp"
+* The icon should default to "Export to Mesh.bmp", set it manually if it does not.
+* Add a tool tip or prompt if desired.
+
 ![SOLIDWORKS Macro Setup](https://github.com/SigmaRelief/SOLIDWORKS-Export-to-Mesh/blob/master/Doc/Macro%20Setup.png)
-In SOLIDWORKS, click Tools/Customize/Commands/Macro, Select "New Macro Button", and place it in the GUI
-Point the new button to "Export to Mesh.swp"
-The icon should default to "Export to Mesh.bmp", set it manually if it does not.
-Add a tool tip or prompt if desired.
 
 # Usage
 If Python 3.X is installed and already added to the Windows PATH variable, use is as easy as clicking the "Export" button.
