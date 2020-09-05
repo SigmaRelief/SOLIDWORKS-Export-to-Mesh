@@ -22,7 +22,9 @@ If Python 3.X is installed and already added to the Windows PATH variable, use i
 
 If Python is not added to PATH, launch the macro and click "Configure Python", follow the prompt, then click the "Save settings..." box to save your configuration.
 
-Changes to the default export location can also be saved with the "Save Settings..." box.  The export location can optionally be saved as relative to the user's profile folder to allow easier shared use.  This option is only visible if the export path is already within the active users profile folder.
+Changes to the default export location can also be saved with the "Save Settings..." box.  The export location can optionally be saved as relative to the user's profile folder by including the [UserDir] variable
+
+Tolerance on mesh files can be optionally adjusted at time of export.  If save settings is selected, these values are set as the new SOLIDWORKS defaults.  SOLIDWORKS uses coarse values by default so it is probably useful to significantly reduce this value if part accuracy and finish are important.
 
 The "Export all configurations" option iterates through all configurations and exports them as individual files.  The file name (and thus internal body names) can be configured via a dropdown to place the SOLIDWORKS configuration name at the beginning or end of the file name, or use the configuration name only.  Entries within this list can be adapted with any desired delimiter or order by typing directly in the dropdown box and saved with the "Save settings..." box.
 
@@ -30,10 +32,15 @@ The file format dropdown only includes .3MF, .STL, and .STEP by default (in both
 
 The underlying body re-name happens entirely within Python and this portion of the code may be applicable to other CAD tools with minor updates to search for their specific body naming convention.
 
+Variables including SOLIDWORKS Custom Properties, Configuration Names, and current date/time in multiple formats can be included in the File Name and File path fields for single use, or saved as part of the defaults by clicking the Use Variables button.
+
+![Screenshot of Variable Inputs](https://github.com/SigmaRelief/SOLIDWORKS-Export-to-Mesh/blob/master/Doc/Variable%20Inputs%20Screenshot.png)
+
 # Requirements
 The rename functionality requires Python 3.X to be installed
+The [Date ####] variable requires Microsoft Excel to be installed
 
 # Project status
-This code is believed to be stable and ready for general use, but no guarantees or warranty are provided.  It has been tested only with SOLIDWORKS 2019, PrusaSlicer 2.2.0, and SuperSlicer 2.2.51
+This code is believed to be stable and ready for general use, but no guarantees or warranty are provided.  It has been tested only with SOLIDWORKS 2019, PrusaSlicer 2.2.0, and SuperSlicer 2.2.53
 
 This is a hobby project and should be treated accordingly.
